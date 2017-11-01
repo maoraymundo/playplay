@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/whereami', function() {
+    var_dump(env('APP_ENV')); exit;
+});
